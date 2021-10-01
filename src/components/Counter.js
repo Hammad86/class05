@@ -4,7 +4,7 @@ function Counter() {
     let counterContext = useContext(contextCreator)
     return (
         <div>
-            <h1>Counter Value From Context  {counterContext[0]}</h1>
+            <h1>Counter Value From Context:  {counterContext[0]}</h1>
             <button onClick={()=>{counterContext[1](++counterContext[0])}}>Increment</button>
             <button onClick={()=>{counterContext[1](--counterContext[0])}}>Decreament</button>
         </div>
